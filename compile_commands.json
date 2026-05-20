@@ -1,0 +1,14 @@
+[
+  {
+    "file": "main.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++23",
+      "main.cpp",
+      "-o",
+      "perfection"
+    ],
+    "directory": "/home/unknown/programming/perfect_numbers",
+    "output": "perfection"
+  }
+]

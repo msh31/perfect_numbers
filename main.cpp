@@ -1,6 +1,5 @@
 #include <print>
 #include <cmath>
-#include <climits>
 
 bool is_prime( int n ) {
     if( n <= 1 ) return false;
@@ -13,16 +12,14 @@ bool is_prime( int n ) {
 int main( ) {
     std::println( "Hallo, Wereld!" );
 
-    int n = INT_MAX;
-    for ( int i = 2; i <= INT_MAX; i++ ) {
+    for ( int64_t i = 2; i <= INT64_MAX; i++ ) {
         if ( is_prime( std::pow( 2, i ) - 1 ) ) {
-            int perfect_number = ( std::pow( 2, i) - 1 );
+            int64_t perfect_number = ( std::pow( 2, i) - 1 );
             perfect_number *= std::pow( 2, i - 1 );
-            if(perfect_number < 0) break;
+            if( perfect_number < 0 ) break;
             std::println( "found a perfect number: {}", perfect_number );
         }
     }
 
-    // std::println( "is {} a prime? - {}", n, is_prime( n ) );
     return 0;
 }
